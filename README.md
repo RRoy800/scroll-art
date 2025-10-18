@@ -1,4 +1,8 @@
-# scroll-art
-This is an original work created by RRoy800.
-All the Ascii art was sketched and then created in java by myself.
-Credit to ifenghm for some of the code used in this project.
+# The Gem
+I drew an 8 x 9 drawing by a gem.
+
+I staterd this one by thinking randomly of the shape of a gem and then sketching it out. 
+This work was entirley created by myself byt some of the code was borrowed from ifenghm.
+
+(Citation Points: 1)
+
