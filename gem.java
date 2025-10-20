@@ -1,10 +1,10 @@
 import java.util.Random;
 
 
-public class Ascii {
+public class gem {
 
 
-    static final int WIDTH = getTerminalWidth() - 1;
+    static final int WIDTH = 120;
     static final int GEM_WIDTH = 10;
     static final int GEM_HEIGHT = 8;
     static final Random rand = new Random();
@@ -87,40 +87,8 @@ public class Ascii {
 
         return img;
     }
-     public static int getTerminalWidth() {
-        String os = System.getProperty("os.name").toLowerCase();
 
-
-        if (os.contains("nix") || os.contains("nux") || os.contains("mac")) {
-            return getUnixTerminalWidth();
-        } else {
-            return 80;
-        }
-    }
-    private static int getUnixTerminalWidth() {
-        try {
-           
-            String columns = System.getenv("COLUMNS");
-            if (columns != null && !columns.isEmpty()) {
-                return Integer.parseInt(columns);
-            }
-
-
-            ProcessBuilder pb = new ProcessBuilder("/bin/sh", "-c", "stty size </dev/tty");
-            pb.redirectErrorStream(true);
-            Process process = pb.start();
-            java.io.BufferedReader reader = new java.io.BufferedReader(
-                    new java.io.InputStreamReader(process.getInputStream()));
-            String output = reader.readLine();
-            if (output != null && !output.isEmpty()) {
-                String[] parts = output.trim().split(" ");
-                return Integer.parseInt(parts[1]);
-            }
-        } catch (Exception ignored) {
-           
-        }
-        return 80;
-    }
+    
 }
 
 

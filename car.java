@@ -1,7 +1,7 @@
 import java.util.Random;
 
 
-public class Scroll {
+public class car {
 
 
     static final int WIDTH = 120;
@@ -36,6 +36,7 @@ public class Scroll {
                 img[y][x] = ' ';
             }
         }
+        
     img[0][5]  = '_';
     img[0][6]  = '_';
     img[0][7]  = '_';
